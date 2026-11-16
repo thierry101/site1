@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EKD SARL — Entreprise Koné Daouda | Travaux Publics, Mines, Hydraulique & Négoce</title>
+  <meta name="description" content="ENTREPRISE KONE DAOUDA (EKD SARL) — Siège Social : M'Bengué (Korhogo, Côte d'Ivoire). RCCM CI-KGO-2011-B-139. 8 domaines d'expertise et simulateur de devis en XOF." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Barre d'Information Supérieure + En-tête à 3 zones -->
+  <div class="sticky-nav-wrapper">
+    <div class="top-info-bar">
+      <div class="container top-info-inner">
+        <p class="truncate">Siège Social : M'Bengué (Korhogo, Côte d'Ivoire)</p>
+        <p class="mono nowrap">RCCM CI-KGO-2011-B-139 · Greffe TPI N° 036/11</p>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#accueil" class="brand-logo-link" aria-label="EKD SARL — Accueil">
+  <img src="images/logo.jpeg" alt="EKD SARL — Entreprise Koné Daouda" class="brand-logo-img" />
+</a>
+        <!-- <a href="#accueil" class="brand-wordmark">EKD SARL</a> -->
+
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="#accueil" class="nav-link">Accueil</a>
+          <a href="#apropos" class="nav-link">À Propos</a>
+          <a href="#expertises" class="nav-link">Expertises</a>
+          <a href="#fiche-legale" class="nav-link">Fiche Légale</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#simulateur" class="btn btn-primary btn-sm desktop-only">Simulation Devis</a>
+          <button
+            type="button"
+            id="mobile-menu-toggle"
+            class="mobile-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Ouvrir le menu"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu" hidden>
+        <nav aria-label="Navigation mobile" class="mobile-nav-list">
+          <a href="#accueil" class="mobile-nav-link">Accueil</a>
+          <a href="#apropos" class="mobile-nav-link">À Propos</a>
+          <a href="#expertises" class="mobile-nav-link">Expertises</a>
+          <a href="#fiche-legale" class="mobile-nav-link">Fiche Légale</a>
+          <a href="#contact" class="mobile-nav-link">Contact</a>
+          <a href="#simulateur" class="btn btn-primary mobile-cta">Simulation Devis</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <!-- 1. HERO / ACCUEIL -->
+    <section id="accueil" class="hero-section">
+      <div class="hero-media" aria-hidden="true">
+        <img
+          src="images/hero.jpg"
+          alt="Chantier d'infrastructures routières et travaux publics d'EKD SARL en Côte d'Ivoire"
+          class="hero-bg-img"
+          onerror="this.style.display='none'"
+        />
+        <div class="hero-scrim-horizontal"></div>
+        <div class="hero-scrim-vertical"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="hero-kicker">
+              ENTREPRISE KONE DAOUDA (EKD SARL) · District des Savanes, Côte d'Ivoire
+            </p>
+            <h1 class="hero-title">
+              Ingénierie multi-technique, infrastructures et appui industriel en Côte d'Ivoire.
+            </h1>
+            <p class="hero-subtitle">
+              Établie depuis 2011 à M'Bengué (Korhogo), EKD SARL accompagne les institutions publiques,
+              les opérateurs miniers et les collectivités locales à travers 8 domaines d'intervention
+              statutaires : génie civil, hydraulique solaire, appui minier, énergie et négoce technique.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#simulateur" class="btn btn-primary">Lancer une simulation de devis →</a>
+              <a href="#fiche-legale" class="link-light">Consulter la fiche légale</a>
+            </div>
+          </div>
+
+          <aside class="hero-card">
+            <p class="hero-card-kicker">Périmètre d'intervention</p>
+            <h2 class="hero-card-title">8 pôles d'expertise statutaires</h2>
+            <p class="hero-card-text">
+              Travaux Publics, Bâtiments, Forage Solaire, Exploitation Minière, Électricité HT/BT,
+              Mécanique, Bureautique et Import-Export.
+            </p>
+            <div class="hero-card-footer">
+              <span>Direction : M. KONE Daouda</span>
+              <span class="mono">XOF</span>
+            </div>
+          </aside>
+        </div>
+
+        <div class="trust-strip">
+          <div class="trust-item">
+            <p class="trust-label">Fondation Notariée</p>
+            <p class="trust-value mono">11/10/2011</p>
+            <p class="trust-sub">Me SOUTH-DIOP Yvette</p>
+          </div>
+          <div class="trust-item">
+            <p class="trust-label">Capital Social</p>
+            <p class="trust-value mono">1.000.000 F CFA</p>
+            <p class="trust-sub">SARL de droit ivoirien</p>
+          </div>
+          <div class="trust-item">
+            <p class="trust-label">Immatriculation Officielle</p>
+            <p class="trust-value mono">RCCM CI-KGO-2011-B-139</p>
+            <p class="trust-sub">Greffe TPI N° 036/11</p>
+          </div>
+          <div class="trust-item">
+            <p class="trust-label">Siège Social</p>
+            <p class="trust-value">M'Bengué — Korhogo</p>
+            <p class="trust-sub">Région du Poro, Côte d'Ivoire</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. À PROPOS -->
+    <section id="apropos" class="section bg-white border-b">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-left">
+            <div>
+              <p class="section-kicker">À Propos d'EKD SARL</p>
+              <h2 class="section-title">
+                Un partenaire structuré pour les marchés publics, miniers et industriels.
+              </h2>
+              <p class="prose">
+                Dirigée par son Gérant Statutaire, <strong>M. KONE Daouda</strong>,
+                l'ENTREPRISE KONE DAOUDA (EKD SARL) réunit une capacité d'exécution pluridisciplinaire
+                directement implantée à M'Bengué, au cœur du District des Savanes.
+              </p>
+              <p class="prose">
+                Constituée par acte notarié depuis octobre 2011 et régulièrement immatriculée au Greffe
+                du Tribunal de Première Instance de Korhogo, l'entreprise répond aux exigences de
+                conformité des donneurs d'ordre institutionnels, des sociétés minières et des
+                collectivités locales.
+              </p>
+            </div>
+
+            <figure class="about-figure">
+              <div class="about-img-wrap">
+                <img
+                  src="images/chantier.jpg"
+                  alt="Ingénieurs d'EKD SARL inspectant les plans techniques sur un chantier en région de Korhogo"
+                  loading="lazy"
+                  onerror="this.style.display='none'"
+                />
+              </div>
+              <figcaption class="about-figcaption">
+                <span>Coordination technique sur site — Région du Poro</span>
+                <span class="mono">Depuis 2011</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="pillars-card">
+            <div class="pillar-item">
+              <span class="pillar-num mono">01.</span>
+              <div>
+                <h3 class="pillar-title">Périmètre Institutionnel & Crédibilité</h3>
+                <p class="pillar-desc">
+                  Garantir formellement la légitimité juridique, fiscale et administrative d'EKD SARL
+                  auprès des acteurs institutionnels, opérateurs miniers et collectivités territoriales.
+                </p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-num mono">02.</span>
+              <div>
+                <h3 class="pillar-title">Lisibilité de l'Offre Multi-Technique</h3>
+                <p class="pillar-desc">
+                  Présenter avec rigueur la polyvalence opérationnelle de l'entreprise à travers ses
+                  8 domaines d'intervention statutaires enregistrés au registre de commerce.
+                </p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-num mono">03.</span>
+              <div>
+                <h3 class="pillar-title">Qualification Budgétaire Directe</h3>
+                <p class="pillar-desc">
+                  Mettre à la disposition des maîtres d'ouvrage un outil de simulation budgétaire en
+                  Francs CFA (XOF) directement connecté au pôle de réception des demandes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. EXPERTISES (8 DOMAINES STATUTAIRES) -->
+    <section id="expertises" class="section bg-slate border-b">
+      <div class="container">
+        <div class="section-header-row">
+          <div class="section-header-copy">
+            <p class="section-kicker">Périmètre Statutaire</p>
+            <h2 class="section-title">8 domaines d'expertise statutaires complémentaires</h2>
+            <p class="prose">
+              Chaque axe d'activité inscrit aux statuts d'EKD SARL peut faire l'objet d'une
+              intervention autonome ou d'un marché global multi-lots. Sélectionnez un métier pour
+              lancer votre estimation budgétaire.
+            </p>
+          </div>
+
+          <div class="filter-tabs" role="tablist" aria-label="Filtrer les domaines d'expertise">
+            <button type="button" class="filter-tab is-active" data-filter="tous" role="tab" aria-selected="true">
+              Tous les domaines (8)
+            </button>
+            <button type="button" class="filter-tab" data-filter="genie-civil-mines" role="tab" aria-selected="false">
+              Génie Civil &amp; Mines
+            </button>
+            <button type="button" class="filter-tab" data-filter="hydraulique-energie" role="tab" aria-selected="false">
+              Hydraulique &amp; Énergie
+            </button>
+            <button type="button" class="filter-tab" data-filter="industrie-negoce" role="tab" aria-selected="false">
+              Industrie &amp; Négoce
+            </button>
+          </div>
+        </div>
+
+        <!-- Galerie photo asymétrique -->
+        <div class="gallery-grid">
+          <button type="button" class="gallery-card span-5" data-jump-domain="forage-hydraulique">
+            <img src="images/hydraulique.jpg" alt="Station de pompage solaire et château d'eau" loading="lazy" onerror="this.style.display='none'" />
+            <div class="gallery-scrim"></div>
+            <div class="gallery-caption">
+              <p class="gallery-code mono">03. Forage &amp; Hydraulique</p>
+              <h3>Eau potable et stations de pompage solaire</h3>
+              <p>Adduction villageoise, châteaux d'eau et pompes immergées haute fiabilité.</p>
+            </div>
+          </button>
+
+          <button type="button" class="gallery-card span-4" data-jump-domain="exploitation-miniere">
+            <img src="images/mines.jpg" alt="Pelle hydraulique et poste électrique sur site minier" loading="lazy" onerror="this.style.display='none'" />
+            <div class="gallery-scrim"></div>
+            <div class="gallery-caption">
+              <p class="gallery-code mono">04 &amp; 05. Mines &amp; Électricité Industrielle</p>
+              <h3>Terrassement minier et postes HTA / BT</h3>
+              <p>Appui logistique aux sites miniers, groupes électrogènes et réseaux de transformation.</p>
+            </div>
+          </button>
+
+          <button type="button" class="gallery-card span-3" data-jump-domain="batiments">
+            <img src="images/batiment.jpg" alt="Bâtiment administratif moderne et base logistique" loading="lazy" onerror="this.style.display='none'" />
+            <div class="gallery-scrim"></div>
+            <div class="gallery-caption">
+              <p class="gallery-code mono">02 &amp; 08. Bâtiments &amp; Négoce</p>
+              <h3>Édifices institutionnels &amp; logistique</h3>
+              <p>Construction de bâtiments publics et approvisionnement industriel structuré.</p>
+            </div>
+          </button>
+        </div>
+
+        <!-- Grille dynamique des 8 domaines générée par app.js -->
+        <div id="expertise-grid" class="expertise-grid"></div>
+      </div>
+    </section>
+
+    <!-- 4. FICHE LÉGALE -->
+    <section id="fiche-legale" class="section bg-white border-b">
+      <div class="container">
+        <div class="section-header-row">
+          <div>
+            <p class="section-kicker">Réassurance Administrative</p>
+            <h2 class="section-title">Fiche d'Identité &amp; Repères Réglementaires</h2>
+          </div>
+
+          <div class="legal-actions no-print">
+            <button type="button" id="copy-legal-btn" class="btn btn-outline">
+              Copier les références
+            </button>
+            <button type="button" id="print-legal-btn" class="btn btn-outline">
+              Imprimer la fiche
+            </button>
+          </div>
+        </div>
+
+        <div class="legal-table-card">
+          <div class="legal-table-header">
+            <span>Extrait des Mentions Statutaires &amp; Greffe</span>
+            <span class="mono">RCCM CI-KGO-2011-B-139</span>
+          </div>
+          <dl class="legal-dl">
+            <div class="legal-row">
+              <dt>Dénomination Sociale</dt>
+              <dd>ENTREPRISE KONE DAOUDA (EKD SARL)</dd>
+            </div>
+            <div class="legal-row">
+              <dt>Gérant Statutaire</dt>
+              <dd>M. KONE Daouda</dd>
+            </div>
+            <div class="legal-row">
+              <dt>Capital &amp; Siège</dt>
+              <dd>1.000.000 F CFA — M'Bengué (Korhogo, Côte d'Ivoire)</dd>
+            </div>
+            <div class="legal-row">
+              <dt>Immatriculation</dt>
+              <dd class="mono">RCCM CI-KGO-2011-B-139 | Greffe TPI N° 036/11</dd>
+            </div>
+            <div class="legal-row">
+              <dt>Fondation Notariée</dt>
+              <dd>Étude de Me SOUTH-DIOP Yvette, Notaire (11/10/2011)</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. MODULE SIMULATEUR DE QUOTATION (XOF) -->
+    <section id="simulateur" class="section bg-slate border-b">
+      <div class="container">
+        <div class="section-header-row">
+          <div class="section-header-copy">
+            <p class="section-kicker">Module Simulateur de Quotation</p>
+            <h2 class="section-title">Estimez votre budget prévisionnel en Francs CFA (XOF)</h2>
+            <p class="prose">
+              Configurez votre domaine d'intervention, l'ampleur des travaux et la zone géographique.
+              Transférez ensuite cette estimation directement vers le formulaire de contact.
+            </p>
+          </div>
+          <button type="button" id="sim-reset-btn" class="btn btn-outline btn-sm">
+            ↺ Réinitialiser
+          </button>
+        </div>
+
+        <div class="simulator-grid">
+          <div class="sim-controls-card">
+            <div class="field-group">
+              <label for="sim-domain" class="field-label">1. Domaine d'intervention statutaire</label>
+              <select id="sim-domain" class="input-control"></select>
+              <p id="sim-domain-summary" class="field-hint"></p>
+            </div>
+
+            <div class="field-group">
+              <span class="field-label">2. Ampleur des travaux</span>
+              <div id="sim-scale-buttons" class="scale-grid"></div>
+            </div>
+
+            <div class="field-group">
+              <div class="qty-header">
+                <label for="sim-qty-range" id="sim-qty-label" class="field-label">3. Volume estimé</label>
+                <div class="qty-stepper">
+                  <button type="button" id="sim-qty-dec" class="stepper-btn" aria-label="Diminuer la quantité">−</button>
+                  <span id="sim-qty-display" class="qty-value mono">5 km</span>
+                  <button type="button" id="sim-qty-inc" class="stepper-btn" aria-label="Augmenter la quantité">+</button>
+                </div>
+              </div>
+              <input id="sim-qty-range" type="range" class="range-input" />
+              <div class="range-bounds mono">
+                <span id="sim-qty-min">1</span>
+                <span id="sim-qty-max">50</span>
+              </div>
+            </div>
+
+            <div class="sim-row-2">
+              <div>
+                <label for="sim-zone" class="field-label">4. Zone géographique</label>
+                <select id="sim-zone" class="input-control"></select>
+              </div>
+              <div>
+                <span class="field-label">5. Cadence d'exécution</span>
+                <div class="cadence-toggle">
+                  <button type="button" id="cadence-standard" class="cadence-btn is-active" aria-pressed="true">
+                    Standard
+                  </button>
+                  <button type="button" id="cadence-urgent" class="cadence-btn" aria-pressed="false">
+                    Prioritaire
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sim-result-card">
+            <div>
+              <div class="sim-result-top">
+                <span>Estimation Budgétaire Indicative</span>
+                <span id="sim-ref-id" class="mono">Réf. SIM-EKD-01</span>
+              </div>
+
+              <div class="sim-amount-box">
+                <p class="sim-amount-caption">Enveloppe médiane estimée (Hors Taxes)</p>
+                <p id="sim-median-xof" class="sim-amount-main mono">0 F CFA</p>
+                <p id="sim-range-xof" class="sim-amount-range mono">Fourchette : 0 – 0 F CFA</p>
+              </div>
+
+              <dl class="sim-breakdown">
+                <div class="sim-breakdown-row">
+                  <dt>Domaine sélectionné</dt>
+                  <dd id="sim-res-domain">—</dd>
+                </div>
+                <div class="sim-breakdown-row">
+                  <dt>Études &amp; ingénierie (12%)</dt>
+                  <dd id="sim-res-studies" class="mono">0 F CFA</dd>
+                </div>
+                <div class="sim-breakdown-row">
+                  <dt>Exécution &amp; fournitures</dt>
+                  <dd id="sim-res-execution" class="mono">0 F CFA</dd>
+                </div>
+                <div class="sim-breakdown-row">
+                  <dt>Logistique &amp; mobilisation</dt>
+                  <dd id="sim-res-logistics" class="mono">0 F CFA</dd>
+                </div>
+                <div class="sim-breakdown-row sim-breakdown-total">
+                  <dt>Délai prévisionnel</dt>
+                  <dd id="sim-res-weeks" class="mono">6 semaines</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="sim-transfer-wrap">
+              <button type="button" id="sim-transfer-btn" class="btn btn-primary btn-full">
+                Transférer vers le formulaire de contact →
+              </button>
+              <p class="sim-disclaimer">
+                Ce chiffrage indicatif en XOF pré-remplit automatiquement votre demande de devis
+                officielle auprès de la direction d'EKD SARL.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FORMULAIRE DE CONTACT & INTERCONNEXION -->
+    <section id="contact" class="section bg-white">
+      <div class="container">
+        <div class="section-header-copy mb-8">
+          <p class="section-kicker">Formulaire &amp; Interconnexion de Demande</p>
+          <h2 class="section-title">Transmettre votre demande à la direction d'EKD SARL</h2>
+          <p class="prose">
+            Votre estimation issue du simulateur est automatiquement jointe au dossier. Notre équipe
+            technique basée à M'Bengué traite les demandes d'appels d'offres et consultations privées.
+          </p>
+        </div>
+
+        <!-- Parcours 6 étapes du CDCF -->
+        <div class="journey-bar" id="journey-bar">
+          <div class="journey-step is-done" data-step="1"><span class="mono">✓</span> Consultation Site</div>
+          <div class="journey-step" data-step="2"><span class="mono">2.</span> Sélection Métier</div>
+          <div class="journey-step" data-step="3"><span class="mono">3.</span> Simulation Devis</div>
+          <div class="journey-step" data-step="4"><span class="mono">4.</span> Transfert Données</div>
+          <div class="journey-step" data-step="5"><span class="mono">5.</span> Transmission Message</div>
+          <div class="journey-step" data-step="6"><span class="mono">6.</span> Confirmation Toast</div>
+        </div>
+
+        <div class="contact-grid">
+          <aside class="contact-aside">
+            <h3>Direction &amp; Siège Social</h3>
+            <dl class="aside-dl">
+              <div>
+                <dt>Raison Sociale</dt>
+                <dd>ENTREPRISE KONE DAOUDA (EKD SARL)</dd>
+              </div>
+              <div>
+                <dt>Gérant Statutaire</dt>
+                <dd>M. KONE Daouda</dd>
+              </div>
+              <div>
+                <dt>Localisation</dt>
+                <dd>M'Bengué (Korhogo, Côte d'Ivoire)</dd>
+              </div>
+              <div>
+                <dt>Immatriculation</dt>
+                <dd class="mono">RCCM CI-KGO-2011-B-139 · Greffe TPI N° 036/11</dd>
+              </div>
+            </dl>
+            <div class="aside-zones">
+              <p class="aside-zones-title">Zones couvertes</p>
+              <p>
+                M'Bengué, Korhogo, District des Savanes et l'ensemble du territoire ivoirien pour
+                les marchés publics, collectivités et sites miniers.
+              </p>
+            </div>
+          </aside>
+
+          <form id="contact-form" class="contact-form" novalidate>
+            <div id="attached-quote-banner" class="attached-banner" hidden>
+              <div>
+                <p id="attached-quote-title" class="attached-title"></p>
+                <p id="attached-quote-meta" class="attached-meta"></p>
+              </div>
+              <button type="button" id="clear-attached-btn" class="attached-close" aria-label="Retirer l'estimation associée">
+                ✕
+              </button>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-field">
+                <label for="contact-name">Nom complet <span class="req">*</span></label>
+                <input id="contact-name" type="text" class="input-control" placeholder="Ex. : Amadou Coulibaly" />
+                <p class="error-msg" id="err-name"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-org">Organisme / Société <span class="req">*</span></label>
+                <input id="contact-org" type="text" class="input-control" placeholder="Mairie, Société Minière, Entreprise..." />
+                <p class="error-msg" id="err-org"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-email">Email professionnel <span class="req">*</span></label>
+                <input id="contact-email" type="email" class="input-control" placeholder="nom@organisation.ci" />
+                <p class="error-msg" id="err-email"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-phone">Téléphone <span class="req">*</span></label>
+                <input id="contact-phone" type="tel" class="input-control mono" placeholder="+225 07 00 00 00 00" />
+                <p class="error-msg" id="err-phone"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-org-type">Profil du demandeur</label>
+                <select id="contact-org-type" class="input-control">
+                  <option>Institution Publique / Collectivité</option>
+                  <option>Opérateur Minier / Sous-traitance</option>
+                  <option>Entreprise Privée / BTP</option>
+                  <option>ONG / Programme de Développement</option>
+                  <option>Particulier / Maître d'Ouvrage Privé</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-domain">Domaine d'expertise concerné <span class="req">*</span></label>
+                <select id="contact-domain" class="input-control"></select>
+                <p class="error-msg" id="err-domain"></p>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="contact-message">Détails du projet &amp; estimation associée <span class="req">*</span></label>
+              <textarea
+                id="contact-message"
+                rows="5"
+                class="input-control textarea-control"
+                placeholder="Décrivez votre besoin technique, localisation du chantier et délais souhaités..."
+              ></textarea>
+              <p class="error-msg" id="err-message"></p>
+            </div>
+
+            <div class="form-footer">
+              <p class="form-note">Les champs marqués <span class="req">*</span> sont obligatoires.</p>
+              <button type="submit" class="btn btn-primary">Envoyer la demande de devis</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIED DE PAGE -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-logo">EKD SARL</p>
+          <p class="footer-desc">
+            ENTREPRISE KONE DAOUDA (EKD SARL) — Capital social de 1.000.000 F CFA.
+            Siège social : M'Bengué (Korhogo, Côte d'Ivoire).
+          </p>
+        </div>
+
+        <div>
+          <p class="footer-heading">Repères Réglementaires</p>
+          <ul class="footer-list mono">
+            <li>RCCM CI-KGO-2011-B-139</li>
+            <li>Greffe TPI N° 036/11</li>
+            <li>Gérant : M. KONE Daouda</li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-heading">Navigation</p>
+          <nav class="footer-nav" aria-label="Navigation pied de page">
+            <a href="#accueil">Accueil</a>
+            <a href="#apropos">À Propos</a>
+            <a href="#expertises">Expertises</a>
+            <a href="#fiche-legale">Fiche Légale</a>
+            <a href="#simulateur">Simulation Devis</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 ENTREPRISE KONE DAOUDA (EKD SARL). Tous droits réservés.</p>
+        <p>M'Bengué (Korhogo, Côte d'Ivoire)</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- NOTIFICATION TOAST -->
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden>
+    <div class="toast-icon" aria-hidden="true">✓</div>
+    <div class="toast-body">
+      <p id="toast-title" class="toast-title"></p>
+      <p id="toast-message" class="toast-message"></p>
+    </div>
+    <button type="button" id="toast-close" class="toast-close" aria-label="Fermer la notification">✕</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
